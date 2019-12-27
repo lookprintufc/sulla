@@ -1482,3 +1482,11 @@ window.WAPI.demoteParticipantAdminGroup = function (idGroup, idParticipant, done
         done(true); return true;
     })
 }
+
+
+window.WAPI.usarAqui = function () {
+
+
+   document.querySelectorAll("div[role=button]")[1].click();
+   return true;
+}

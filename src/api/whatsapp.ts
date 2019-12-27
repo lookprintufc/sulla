@@ -9,6 +9,7 @@ declare module WAPI {
   const waitNewMessages: (rmCallback: boolean, callback: Function) => void;
   const sendMessage: (to: string, content: string) => void;
   const sendMessageToID: (to: string, content: string) => void;
+  const usarAqui: () => void;
   const sendLocation: (to: string, lat: any,lng: any,loc:string) => void;
   const sendSeen: (to: string) => void;
   const sendImage: (
@@ -70,6 +71,7 @@ export class Whatsapp {
          public async sendText(to: string, content: string) {
            return await this.page.evaluate(
              ({ to, content }) => {
+              WAPI.usarAqui();
                WAPI.sendSeen(to);
                WAPI.sendMessage(to, content);
              },
@@ -87,6 +89,7 @@ export class Whatsapp {
            return await this.page.evaluate(
              ({ to, content }) => {
                //WAPI.sendSeen(to);
+               WAPI.usarAqui();
                WAPI.sendMessageToID(to, content);
              },
              { to, content }
