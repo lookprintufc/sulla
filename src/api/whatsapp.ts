@@ -86,7 +86,7 @@ export class Whatsapp {
          public async sendTextToId(to: string, content: string) {
            return await this.page.evaluate(
              ({ to, content }) => {
-               WAPI.sendSeen(to);
+               //WAPI.sendSeen(to);
                WAPI.sendMessageToID(to, content);
              },
              { to, content }

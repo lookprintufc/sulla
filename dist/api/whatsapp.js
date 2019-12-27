@@ -67,7 +67,6 @@ var Whatsapp = (function () {
                 switch (_a.label) {
                     case 0: return [4, this.page.evaluate(function (_a) {
                             var to = _a.to, content = _a.content;
-                            WAPI.sendSeen(to);
                             WAPI.sendMessageToID(to, content);
                         }, { to: to, content: content })];
                     case 1: return [2, _a.sent()];
