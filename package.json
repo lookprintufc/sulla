@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smashah/sulla.git"
+    "url": "git+https://github.com/lookprintufc/sulla.git"
   },
   "keywords": [
     "whatsapp",
@@ -34,9 +34,9 @@
   "author": "Mohammed Shah & Daniel Cardenas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/smashah/sulla/issues"
+    "url": "https://github.com/lookprintufc/sulla/issues"
   },
-  "homepage": "https://github.com/smashah/sulla#readme",
+  "homepage": "https://github.com/lookprintufc/sulla#readme",
   "devDependencies": {
     "@types/node": "^12.7.12",
     "@types/puppeteer": "^1.20.2",
