@@ -79,9 +79,6 @@ function create(sessionId, puppeteerConfigOverride, customUserAgent) {
                     return [4, browser_1.injectApi(waPage)];
                 case 7:
                     waPage = _a.sent();
-                    return [4, auth_1.keepHere(waPage)];
-                case 8:
-                    _a.sent();
                     spinner.succeed('Whatsapp is ready');
                     return [2, new whatsapp_1.Whatsapp(waPage)];
             }

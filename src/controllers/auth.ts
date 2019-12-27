@@ -59,11 +59,11 @@ export async function retrieveQR(waPage: puppeteer.Page) {
 
 export async function keepHere(waPage: puppeteer.Page) {
   await waPage.waitForFunction(
-    `[...document.querySelectorAll("div[role=button")].find(e=>{return e.innerHTML=="Use Here"})`,
+    `[...document.querySelectorAll("div[role=button")].find(e=>{return e.innerHTML=="Usar Aqui"})`,
     { timeout: 0 }
   );
   await waPage.evaluate(
-    `[...document.querySelectorAll("div[role=button")].find(e=>{return e.innerHTML=="Use Here"}).click()`
+    `[...document.querySelectorAll("div[role=button")].find(e=>{return e.innerHTML=="Usar Aqui"}).click()`
   );
   await keepHere(waPage);
 }

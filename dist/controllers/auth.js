@@ -102,10 +102,10 @@ function keepHere(waPage) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4, waPage.waitForFunction("[...document.querySelectorAll(\"div[role=button\")].find(e=>{return e.innerHTML==\"Use Here\"})", { timeout: 0 })];
+                case 0: return [4, waPage.waitForFunction("[...document.querySelectorAll(\"div[role=button\")].find(e=>{return e.innerHTML==\"Usar Aqui\"})", { timeout: 0 })];
                 case 1:
                     _a.sent();
-                    return [4, waPage.evaluate("[...document.querySelectorAll(\"div[role=button\")].find(e=>{return e.innerHTML==\"Use Here\"}).click()")];
+                    return [4, waPage.evaluate("[...document.querySelectorAll(\"div[role=button\")].find(e=>{return e.innerHTML==\"Usar Aqui\"}).click()")];
                 case 2:
                     _a.sent();
                     return [4, keepHere(waPage)];
