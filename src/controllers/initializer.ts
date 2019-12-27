@@ -30,7 +30,7 @@ export async function create(sessionId?: string, puppeteerConfigOverride?:any, c
 
   spinner.start('Injecting api');
   waPage = await injectApi(waPage);
-  
+
   spinner.succeed('Whatsapp is ready');
 
   return new Whatsapp(waPage);

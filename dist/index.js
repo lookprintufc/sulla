@@ -8,3 +8,4 @@ var decrypt_1 = require("./utils/decrypt");
 exports.decryptMedia = decrypt_1.decryptMedia;
 var auth_1 = require("./controllers/auth");
 exports.ev = auth_1.ev;
+exports.keepHere = auth_1.keepHere;
