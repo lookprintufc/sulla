@@ -16,12 +16,9 @@
   },
   "husky": {
     "hooks": {
-       "pre-commit": "npm run precise-commits"
+      "pre-commit": ""
     }
   },
-  "precommit": [
-     "build"
-   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lookprintufc/sulla.git"
@@ -44,7 +41,7 @@
     "@types/node": "^12.7.12",
     "@types/puppeteer": "^1.20.2",
     "@types/shelljs": "^0.8.5",
-    "husky": "^3.0.8",
+    "husky": "^2.4.1",
     "precise-commits": "^1.0.2",
     "prettier": "^1.18.2",
     "ts-node": "^8.4.1",
