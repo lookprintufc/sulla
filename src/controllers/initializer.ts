@@ -1,6 +1,6 @@
 import ora from 'ora';
 import { Whatsapp } from '../api/whatsapp';
-import { isAuthenticated, isInsideChat, retrieveQR, randomMouseMovements } from './auth';
+import { isAuthenticated, isInsideChat, retrieveQR, randomMouseMovements, keepHere } from './auth';
 import { initWhatsapp, injectApi } from './browser';
 const spinner = ora();
 
@@ -30,6 +30,7 @@ export async function create(sessionId?: string, puppeteerConfigOverride?:any, c
 
   spinner.start('Injecting api');
   waPage = await injectApi(waPage);
+  
   spinner.succeed('Whatsapp is ready');
 
   return new Whatsapp(waPage);
